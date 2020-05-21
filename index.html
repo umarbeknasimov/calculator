@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 3</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/88c75a879b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="history memory">
+				<ul id="history-list">
+
+				</ul>
+			</div>
+			<div class="calculation" id="calc">
+				<div class="result"><p></p></div>
+				<div class="current"><p></p></div>
+			</div>
+			<div class="buttons">
+				<div class="extra">
+					<div class="choose" id="label">
+						<div class="choice" id="trig"><p>Trig</p></div>
+						<div class="choice" id="func"><p>Func</p></div>
+					</div>
+					<button class="disable" id="second"><p>2nd</p></button>
+					<button class="op" id="sin"><p>sin</p></button>
+					<button class="disable" id="cos"><p>cos</p></button>
+					<button class="disable" id="tan"><p>tan</p></button>
+					<button class="disable" id="hyp"><p>hyp</p></button>
+					<button class="disable" id="sec"><p>sec</p></button>
+					<button class="disable" id="csc"><p>csc</p></button>
+					<button class="disable" id="cot"><p>cot</p></button>
+					<div class="toggle" id="unit">
+						<div class="choice" id="deg"><p>Deg</p></div>
+						<div class="choice" id="rad"><p>Rad</p></div>
+					</div>
+				</div>
+				<div class="common">
+					<button class="disable" id="second"><p>2nd</p></button>
+					<button class="constant" id="pi"><p>pi</p></button>
+					<button class="constant" id="e"><p>e</p></button>
+					<button class="op" id="squared"><p>x^2</p></button>
+					<button class="op" id="cubed"><p>x^3</p></button>
+					<button class="op" id="power"><p>x^y</p></button>
+					<button class="op" id="log"><p>log</p></button>
+					<button class="op" id="ln"><p>ln</p></button>
+					<button class="disable" id="inverse"><p>1/x</p></button>
+					<button class="disable" id="abs"><p>|x|</p></button>
+					<button class="disable" id="fact"><p>x!</p></button>
+					<button class="disable" id="mod"><p>mod</p></button>
+
+				</div>
+				<div class="primary">
+					<button class="disable" id="mr "><p>MR</p></button>
+					<button class="disable" id="mplus"><p>M+</p></button>
+					<button class="disable" id="mminus"><p>M-</p></button>
+					<button class="disable" id="mminus"><p>MC</p></button>
+					<button class="disable" id="ms"><p>MS</p></button>
+					<button class="paren op" id="open">
+						<p>(</p><div id="paren-count">0</div></button>
+					<button class="paren op" id="close"><p>)</p></button>
+					<button id="clear"><p>C</p></button>
+					<button class="number" id="7"><p>7</p></button>
+					<button class="number" id="8"><p>8</p></button>
+					<button class="number" id="9"><p>9</p></button>
+					<button class="op" id="divi"><p>/</p></button>
+					<button class="number" id="4"><p>4</p></button>
+					<button class="number" id="5"><p>5</p></button>
+					<button class="number" id="6"><p>6</p></button>
+					<button class="op" id="mult"><p>*</p></button>
+					<button class="number" id="1"><p>1</p></button>
+					<button class="number" id="2"><p>2</p></button>
+					<button class="number" id="3"><p>3</p></button>
+					<button class="op" id="sub"><p>-</p></button>
+					<button class="disable" id="sign"><p>+/-</p></button>
+					<button class="number" id="0"><p>0</p></button>
+					<button class="op" id="period"><p>.</p></button>
+					<button class="op" id="add"><p>+</p></button>
+				</div>
+				<div class="control">
+					<div class="toggle" id="show">
+						<div class="choice" id="history"><p>History</p></div>
+						<div class="choice" id="memory"><p>Memory</p></div>
+					</div>
+					<div class="position">
+						<button class="disable" id="left"><i class="fas fa-long-arrow-alt-left fa-lg"></i></button>
+						<button class="disable" id="right"><i class="fas fa-long-arrow-alt-right fa-lg"></i></button>
+					</div>
+					<button id="backspace"><i class="fas fa-backspace fa-lg"></i></button>
+					<button id="equal"><p>=</p></button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</main>
+</body>
+</html>

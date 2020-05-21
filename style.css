@@ -1,0 +1,212 @@
+/* css for calculator mockup here */
+
+
+:root {
+    --color1: #E9E1D6;
+    --color2: #464E72;
+    --color3: #FFFFF0;
+}
+.container {
+    width: 720px;
+    height: 512px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 40% 10% 50%;
+    grid-template-areas: "history"
+                         "calculation"
+                         "buttons";
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-list li {
+    padding: 0.75em 0em;
+}
+
+.history {
+    grid-area: history;
+    border-bottom: 1px solid black;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+li.calculation {
+    background-color: var(--color1);
+}
+
+.calculation {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+#calc {
+    grid-area: calculation;
+    border: 1px solid black;
+}
+
+.result > p {
+    margin-left: 1em;
+}
+
+.current > p {
+    margin-right: 1em;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 18% 18% 36% 28%;
+    grid-template-areas: "extra common primary control";
+}
+
+.extra {
+    grid-area: extra;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(6, 16.67%);
+    grid-template-areas: "label label"
+                         "second hyp"
+                         "sin sec"
+                         "cos csc"
+                         "tan cot"
+                         "unit unit"; 
+}
+
+#label {
+    grid-area: label;
+}
+
+#unit {
+    grid-area: unit;
+}
+
+.common {
+    grid-area: common;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(6, 16.67%);
+    grid-template-areas: "second pi"
+                         "e squared"
+                         "cubed power"
+                         "log ln"   
+                         "inverse abs"
+                         "fact mod"; 
+}
+
+.primary {
+    grid-area: primary;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 16.67%);
+    grid-template-areas: "mr mplus mminus mc"
+                         "ms open close divide"
+                         "seven eight nine multiply"
+                         "four five six minus"
+                         "one two three plus"
+                         "sign zero period equal"; 
+}
+
+#open {
+    position: relative;
+}
+#paren-count {
+    position: absolute;
+    font-size: 12px;
+    left: 65%;
+    top: 55%;
+}
+.extra, .common, .primary {
+    border-right: 1.5px solid black;
+}
+.control {
+    grid-area: control;
+    display: grid;
+    grid-template-rows: 16.67% repeat(3, 27.78%);
+    grid-template-areas: "toggle"
+                "position"
+                "backspace"
+                "clear";
+}
+
+button, .choose, .toggle, .position {
+    text-align: center;
+    border: 0.5px solid black;
+}
+
+.choose, .toggle, .position {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#trig, #deg, #history {
+    text-decoration: underline;
+}
+
+button, .choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right {
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left: 1px solid black;
+}
+
+#left {
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid black;
+}
+
+.choice {
+    color: var(--color2);
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.number, #period {
+    background-color: var(--color1);
+
+}
+
+button:hover:not(.disable) {
+    background-color: var(--color3) !important;
+}
+
+li.calculation:hover {
+    background-color: var(--color3) !important;
+    cursor: pointer;
+}
+
+.disable {
+    cursor: not-allowed;
+    background-color: lightgray;
+}
