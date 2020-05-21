@@ -1,5 +1,6 @@
 # calculator
-Scientific calculator
+Scientific calculator: 
+[**Demo**](https://unasimov.github.io/calculator/)
 
 * ## Functionalities
     * Grouping: 1 * (2 + 3)
@@ -17,4 +18,3 @@ Scientific calculator
     * All other functions that don't work are grayed out
     * Multiplication must be specified with *
 
-[**Demo**](https://unasimov.github.io/calculator/)
