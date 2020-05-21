@@ -16,3 +16,5 @@ Scientific calculator
     * Toggle functions (history, memory for example) do not work
     * All other functions that don't work are grayed out
     * Multiplication must be specified with *
+
+[**Demo**](https://unasimov.github.io/calculator/)
