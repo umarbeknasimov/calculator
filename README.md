@@ -1,6 +1,6 @@
 # calculator
 Scientific calculator: 
-[**Demo**](https://unasimov.github.io/calculator/)
+[**Demo**](https://umarbeknasimov.github.io/calculator/)
 
 * ## Functionalities
     * Grouping: 1 * (2 + 3)
